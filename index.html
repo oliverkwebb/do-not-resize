@@ -1,137 +1,118 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <!-- Primary Meta Tags -->
-  <title>Please don’t theme our apps</title>
-  <meta name="title" content="Please don’t theme our apps">
-  <meta name="description" content="An open letter from independent app developers to the wider GNOME community">
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://stopthemingmy.app">
-  <meta property="og:title" content="Please don’t theme our apps">
-  <meta property="og:description" content="An open letter from independent app developers to the wider GNOME community">
-  <meta property="og:image" content="https://stopthemingmy.app/assets/social.png">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://stopthemingmy.app/">
-  <meta property="twitter:title" content="Please don’t theme our apps">
-  <meta property="twitter:description" content="An open letter from independent app developers to the wider GNOME community">
-  <meta property="twitter:image" content="https://stopthemingmy.app/assets/social.png">
-
+  <title>Please don’t resize our windows</title>
+  <meta name="title" content="Please don’t resize our windows">
+  <meta name="description" content="An open letter from an independent app developer to the wider graphical community">
   <link rel="stylesheet" href="style.css">
-
-  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="icon"  href="/assets/crop.svg" />
 </head>
-
 <body>
-
   <div class="intro">
     <div class="container">
-      <img src="assets/leaf.svg" class="intro-icon">
+      <img src="assets/crop.svg" class="intro-icon">
       <h1 class="title">Please don’t resize our windows</h1>
-      <p class="subtitle">An open letter from independent app developers to the wider GNOME community</p>
+      <p class="subtitle">An open letter from independent UI developers to the wider graphical community</p>
     </div>
   </div>
-
   <div class="container">
-
-    <p>We are developers and designers making apps for the GNOME platform. We take pride in our craft and work hard to make sure our applications are a great experience for people.</p>
-
-    <p>Unfortunately, all our efforts designing, developing, and testing our apps are made futile by theming in many cases.</p>
-
+  	<!-- If this were a TV show, auto-sad music would accompany these paragraphs -->
+    <p>UI design is more often than not made harder by the burden of having to resize windows. Responsiveness is a huge issue users
+    impart on developers. Thus, this letter calls to keep your window in conventional aspect ratios (ideally, a constant one we can set).</p>
+    <p>Remember when you reach for the edge of a window to drag it out that you aren't resizing your window, you're resizing our window.</p>
     <br>
-
     <div class="point">
-      <img src="assets/stylesheets.png" class="point-image">
-      <p><b>GTK Stylesheets</b> can make applications look broken, and even unusable.
+      <img src="assets/picard.png" class="point-image">
+      <p><b>Narrow windows</b> can hide apps features and cut off information. Causing people to have to scroll or worse.
     </div>
 
     <div class="point">
-      <img src="assets/iconthemes.png" class="point-image">
-      <p><b>Icon Themes</b> can change icon metaphors, leading to interfaces with icons that don’t express what the developer intended.</p>
+      <img src="assets/cssrules.png" class="point-image">
+      <p><b>Differing aspect ratios</b> often require custom layouts to handle them cleanly</p>
     </div>
 
     <div class="point">
-      <img src="assets/appicons.png" class="point-image">
-      <p><b>App Icons</b> are the identity of an app. Changing an app’s icon denies the developer the possibility to control their brand.
+      <img src="assets/naut.png" class="point-image">
+      <p><b>Padding and a lack of information density</b> are essential features to the modern UI. People can be persuaded to make UI's more compact for support for older display hardware.</p>
+    </div>
+    <br>
+
+    <p>More auxiliary issues exist:</p>
+
+    <p><b>Personalization is personal.</b> People who prefer the apps at different sizes will have different experiences navigating the UI.
+    This wider attack surface can create unforeseen problems, and it can also confuse users and dirty otherwise pristine interfaces.</p>
+
+    <p>If your UI library gives the capability to people to make their apps truly theirs, it will interfere with our plans for the apps.</p>
+
+    <p><b>Differences in distance and size</b> may confuse people looking at screenshots of UI's. The human mind works like <code>xdotool</code>, and instructions like "720px, 140px" are more readable than "Next to the save button"</p>
+
+    <br>
+
+    <p><b>This is why we ask respectfully that our windows not be resized</b>. They are built and tested for 16:9 1080p, and occasionally phone aspect ratios. Different sizes and layouts will make the application look different.</p>
+
+    <p>Though we are working towards the initiative of restricting resizing functionality in GUI libraries, this issue
+    can not be dealt with in its entirety right now.</p>
+
+    <p>The challenge we face is that users launch our apps with the expectation that they will be able to drag it out or split it with
+    another window. And a broader idea of aspect ratio <!-- freedom --> flexibility, this has never been completely true.</p>
+
+    <p><b>If you like personalizing your window sizes</b>. We have nothing against that, however, if your UI goes haywire deviating from the supported
+    aspect ratio or size, it should be fixed on your own accord.</p>
+
+    <p><b>Graphical Displays and corresponding software for them</b> should stay at one fixed size, instead of varying sizes. Solving this issue is very complicated and would damage many forms of accessibility, but devices varying screen size widely is also bad.</p>
+
+    <p><b>If you are a shipping hardware with an unconventional window size</b>: first consider that you are not shipping your default software on
+    that hardware, you are shipping <b>our</b> software on that hardware. Microsoft and Apple usually do not allow their software to be warped in such
+    ways. And your actions are damaging to not just your users, but us.</p>
+    <!-- I'm keeping this in comments, this idea and weird possessiveness, emphasized here, is what open source is actively supposed to prevent.
+    	Changing third-party apps without any QA is reckless, and would be unacceptable on any other platform. Your actions are hurting us app developers a great deal, and are damaging to the entire ecosystem beyond your distribution. !-->
+
+    <p>We understand the desire for personalization, especially on platforms people use to have more flexibility such as linux. However, when you drag "your" window out, you take away power from <b>us</b>. <!-- I'd retain half this paragraph, including the whole thing from this sentence on, if I felt it right to. --> It forces us to consider more edge cases and write more code, when things go wrong it forces us to make more bugfixes. Just because we use UI libraries with the ability to resize does not mean we are okay with you resizing <b>our</b> windows.</p>
+
+  <!-- No semantic HTML -->
+  </div>
+	<div class="join">
+    <div class="container">
+	<h1>What Can I do to help?</h1>
+    <div class="point">
+      <img src="assets/nwglook.png" class="point-image">
+      <p><b>Obfuscate</b> interfaces for window resizing.</p>
     </div>
 
-    <small class="caption">Note: These examples are purely illustrative, and not intended to call out individual themes. No hard feelings, theme devs ❤️</small>
+    <div class="point">
+      <img src="assets/fileroll.png" class="point-image">
+      <p><b>Publish new libraries</b> to create large differences in consistency and flexibility. In hopes people not completely on board upgrade to a large reduction in functionality so that consistency is restored.</p>
+    </div>
 
-    <br>
-
-    <p>There are also less direct, second-order consequences, including:</p>
-
-    <p><b>Appstream Screenshots</b> (the screenshots used in GNOME Software or Flathub) are not very useful if they look nothing like the real app does once you install it.</p>
-
-    <p><b>User Help and Documentation</b> are similarly useless if UI elements on your system are different from the ones described in the documentation.</p>
-
-    <br>
-
-    <p>These blog posts explain some of the issues with theming in more detail:</p>
-    <p>GTK Stylesheets — <a href="https://blogs.gnome.org/tbernard/2018/10/15/restyling-apps-at-scale">Restyling apps at scale</a></p>
-    <p>App Icons — <a href="https://samuelhewitt.com/blog/2017-11-26-linux-themes-third-party-icons">Linux Themes & Third-Party Icons</a></p>
-
-    <br>
-
-    <p><b>This is why we ask respectfully that our applications not be themed</b>. They are built and tested for the upstream GNOME stylesheet, icons, and fonts, so that’s what they should look like on peoples’ systems.</p>
-
-    <p>Though we could disable theming directly in our apps, we do not want to resort to this. We believe that a technical solution would likely not be effective, because this is not a technical problem.</p>
-
-    <p>The problem we’re facing is the expectation that apps can be arbitrarily restyled without manual work, which is and has always been an illusion. Until this perception changes, there is little hope of improving the situation. We’re trying to do our part in raising awareness with this letter.</p>
-
-    <p><b>If you like to tinker with your own system, that’s fine with us</b>. However, if you change things like stylesheets and icons, you should be aware that you’re in unsupported territory. Any issues you encounter should be reported to the theme developer, not the app developer.</p>
-
-    <p>On a platform level, we believe <b>GTK should stop forcing a single stylesheet on all apps by default</b>. Instead of apps having to opt out of this by hardcoding a stylesheet, they should use the platform stylesheet unless they opt in to something else. We realize this is a complicated issue, but assuming every app works with every stylesheet is a bad default.</p>
-
-    <p><b>If you are a distribution who changes the system stylesheet and icons, please reconsider this decision</b>. Changing third-party apps without any QA is reckless, and would be unacceptable on any other platform. Your actions are hurting us app developers a great deal, and are damaging to the entire ecosystem beyond your distribution.</p>
-
-    <p>We understand the need for distributions to stand out. However, we urge you to find ways to do this without taking away our agency. We are tired of having to do extra work for setups we never intended to support, just to have that used against us when people tell us the breakage from theming is “not that bad”. You are not doing this to Blender, Atom, Telegram, or other third party apps. Just because our apps use GTK that does not mean we’re ok with them being changed from under us.</p>
-
-    <p>Since you are shipping the GNOME platform, we assume you want this ecosystem to be healthy. If you do, we ask that you please stop theming our apps.</p>
-
+     <p>And most importantly of all, <b>sign</b> our article, and become a fighter for UI flexibility. Remember, it's not anti-user, it's pro-developer!</p>
     <br>
 
     <p>Signed,</p>
 
     <ul>
       <li><b>Oliver Webb</b> <br> Maintainer of <a href="https://oliverkwebb.github.io/">A poorly written website</a></li>
-      <br>
-      <small class="caption">Note: Even though some of us are Foundation members or work on GNOME, these are our personal views as individuals, and not those of the GNOME Project, the GNOME Foundation, or our employers.</small>
     </ul>
-  </div>
-	<div class="join">
-    <div class="container">
 			<h2>Sign the Letter</h2>
-	    <p>Are you developing (or contributing to) an app for GNOME and would like to sign this letter? Open an <a href="https://github.com/do-not-theme/do-not-theme.github.io/issues">issue</a> or <a href="https://github.com/do-not-theme/do-not-theme.github.io/pulls">merge request</a>.</p>
+	    <p>Submissions for letter signing can be sent via a simple GitHub PR.</p>
 			<br>
 			<h2>Get the Badge</h2>
-			<img src="assets/podcasts-badge.png" class="image">
-			<p>Do you want to show your support, and also make it clear that your app does not officially support themes? Include this stylish badge in your project’s Gitlab project header or Github README:</p>
+			<img src="https://img.shields.io/badge/don't%20resize-1920x1080_only-blue" class="image">
+			<p>Copy link now! Copy link now! Are you the developer of a UI application? Do you struggle with responsiveness and wish it would just go away? We have the solution for you, with just two button presses and a Control-V, you can put this pristine, mint-condition, well constructed shields.io badge in your project, to signal to users and developers alike that you don't care about their "flexibility". Copy link now! Copy link now!</p>
 			<br>
-			<p>To add the badge to your <a href="https://gitlab.gnome.org/help/user/project/badges#project-badges">Gitlab project’s header</a>, go to <b>Settings&nbsp→&nbspGeneral&nbsp→&nbspBadges</b> and set the link and image URLs like so:</p>
-			<div class="code-block">
-				<code><b>Link URL</b>: https://stopthemingmy.app</code></br>
-				<code><b>Badge Image URL</b>: https://stopthemingmy.app/badge.svg</code>
-    	</div>
-			<p>To add the badge to your README, use this snippet:</p>
 			<div class="code-block">
 				<code>
-					[![Please do not theme this app](https://stopthemingmy.app/badge.svg)](https://stopthemingmy.app)
+					![Please do not resize this app](https://img.shields.io/badge/don't%20resize-1920x1080_only-blue)
 				</code>
     	</div>
-    </div>
   </div>
+  <br>
   <footer>
     <p>&copy; Do Not Resize, 2025</p>
-	<p><a href="https://github.com/oliverkwebb/do-not-resize">Website source</a></p>
+	<p>This document is published as parody.<br>I do not condone harassment of any of the creators of the original work<br>The content of this document is protected under fair use regardless of license of the original work</p>
   </footer>
 </body>
 </html>
